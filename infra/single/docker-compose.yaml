@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  reedis:
+    image: redis:7.2-alpine
+    container_name: reedis-single
+    ports:
+      - "6379:6379"
+    command: redis-server
